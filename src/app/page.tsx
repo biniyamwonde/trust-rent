@@ -7,6 +7,8 @@ import PrivacySection from '@/components/PrivacySection';
 import FinalCTASection from '@/components/FinalCTASection';
 import Footer from '@/components/Footer';
 
+// Updated export
+
 export default function Home() {
   return (
     <div className="min-h-screen">
