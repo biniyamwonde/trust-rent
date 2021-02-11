@@ -5,3 +5,5 @@ export const appConfig = {
   apiUrl: process.env.NEXT_PUBLIC_API_URL,
   environment: process.env.NODE_ENV,
 };
+
+// TODO: Review implementation
