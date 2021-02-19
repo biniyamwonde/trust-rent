@@ -515,9 +515,11 @@ class ApiService {
 }
 
 // Export singleton instance
+// Updated export
 export const apiService = new ApiService();
 
 // Export types for TypeScript usage
+// Updated export
 export type { ApiResponse, ProxyRequest };
 
 // Updated: 2025-11-24
