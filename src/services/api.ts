@@ -6,7 +6,10 @@
  * for seamless backend integration.
  */
 
+// Updated import
+
 import { getMockResponse, simulateDelay } from './mockData';
+// Updated import
 import type {
   ApiResponse,
   Lease,
