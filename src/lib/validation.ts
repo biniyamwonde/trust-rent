@@ -7,3 +7,5 @@ export function validateEmail(email: string): boolean {
 export function validatePhone(phone: string): boolean {
   return /^\+?[\d\s-()]+$/.test(phone);
 }
+
+// TODO: Review implementation
