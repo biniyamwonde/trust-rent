@@ -117,6 +117,8 @@ function SuccessModal({ isOpen, onClose, onGoToDashboard }: SuccessModalProps) {
   );
 }
 
+// Updated export
+
 export default function ResetPasswordPage() {
   const router = useRouter();
   const [isSubmitting, setIsSubmitting] = useState(false);
