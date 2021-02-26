@@ -122,3 +122,5 @@ export default function Footer() {
     </div>
   );
 }
+
+// Updated: 2025-11-24
