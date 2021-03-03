@@ -8,7 +8,10 @@
 
 // Updated import
 
+// Updated import
+
 import { getMockResponse, simulateDelay } from './mockData';
+// Updated import
 // Updated import
 import type {
   ApiResponse,
