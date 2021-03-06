@@ -7,6 +7,7 @@
  */
 
 // Base API Response Structure
+// Updated export
 export interface ApiResponse<T = unknown> {
   status: 'SUCCESS' | 'FAIL';
   data?: T;
@@ -14,6 +15,7 @@ export interface ApiResponse<T = unknown> {
 }
 
 // User Authentication Types
+// Updated export
 export interface User {
   uid: string;
   token: string;
@@ -29,6 +31,8 @@ export interface User {
   rewards_points?: number;
 }
 
+// Updated export
+
 export interface LoginResponse {
   uid: string;
   token: string;
@@ -41,6 +45,7 @@ export interface LoginResponse {
 }
 
 // Lease/Tenancy Types (based on REWRITE-TENANCY_API_ANALYSIS.md)
+// Updated export
 export interface Lease {
   rid: string;
   uid: string;
@@ -107,6 +112,8 @@ export interface Lease {
   updated_at: string;
 }
 
+// Updated export
+
 export interface LeaseDocument {
   doc_id: string;
   doc_type: 'lease_agreement' | 'vehicle_lease' | 'commercial_lease' | 'business_registration';
@@ -117,6 +124,7 @@ export interface LeaseDocument {
 }
 
 // Transaction Types (based on REWRITE-PAYMENT_TRANSACTION_API_ANALYSIS.md)
+// Updated export
 export interface Transaction {
   // Core transaction fields (verified from mobile app API)
   pno: string;                         // Transaction number (primary ID)
@@ -184,6 +192,8 @@ export interface Transaction {
   currency?: 'THB';                   // Always THB
 }
 
+// Updated export
+
 export interface TransactionListResponse {
   data: Transaction[];
   pagination: {
@@ -195,6 +205,7 @@ export interface TransactionListResponse {
 }
 
 // Dashboard Types (based on REWRITE-DASHBOARD_API_ANALYSIS.md)
+// Updated export
 export interface DashboardResponse {
   nickname: string;
   userisactive: string;
@@ -216,6 +227,8 @@ export interface DashboardResponse {
     notifications: Notification[];
   };
 }
+
+// Updated export
 
 export interface UserSummaryResponse {
   userisactive: string;
@@ -253,6 +266,7 @@ export interface UserSummaryResponse {
 }
 
 // Notification Types
+// Updated export
 export interface Notification {
   id: string;
   type: 'payment_reminder' | 'promotion' | 'document_required' | 'system';
@@ -266,6 +280,7 @@ export interface Notification {
 }
 
 // Promotion Types
+// Updated export
 export interface Promotion {
   pmid: string;
   category: 'payment' | 'discount' | 'rewards';
@@ -289,6 +304,7 @@ export interface Promotion {
 }
 
 // Payment Types
+// Updated export
 export interface PaymentSummary {
   rid: string;
   property_name: string;
@@ -312,6 +328,8 @@ export interface PaymentSummary {
   applicable_promotions: Promotion[];
 }
 
+// Updated export
+
 export interface PaymentMethod {
   method: 'credit_card' | 'bank_transfer' | 'promptpay';
   enabled: boolean;
@@ -324,6 +342,8 @@ export interface PaymentMethod {
   promptpay_id?: string;
 }
 
+// Updated export
+
 export interface SavedCard {
   card_id: string;
   card_last_four: string;
@@ -333,6 +353,7 @@ export interface SavedCard {
 
 // Create Lease Types
 // Create Lease Types (Updated API specification)
+// Updated export
 export interface CreateLeaseRequest {
   action: string;                // "createRental"
   data: {
@@ -383,6 +404,8 @@ export interface CreateLeaseRequest {
   }
 }
 
+// Updated export
+
 export interface CreateLeaseResponse {
   rid: string;
   confirmation_number: string;
@@ -391,6 +414,7 @@ export interface CreateLeaseResponse {
 }
 
 // Search Types
+// Updated export
 export interface BuildingSearchResult {
   rbuilding: string;        // Building name
   rstreet: string;          // Street name
@@ -400,6 +424,7 @@ export interface BuildingSearchResult {
 }
 
 // Registration Types (based on docs/registration-flow-prd.md)
+// Updated export
 export interface RegistrationState {
   contactMethod: 'email' | 'mobile';
   contactValue: string;
@@ -416,9 +441,13 @@ export interface RegistrationState {
   };
 }
 
+// Updated export
+
 export interface SendOTPRequest {
   tel: string; // email or mobile number
 }
+
+// Updated export
 
 export interface SendOTPResponse {
   status: 'SUCCESS' | 'FAIL';
@@ -426,10 +455,14 @@ export interface SendOTPResponse {
   reason: string | null;
 }
 
+// Updated export
+
 export interface VerifyOTPRequest {
   token: string; // JWT token from send OTP
   passcode: string; // 6-digit OTP code
 }
+
+// Updated export
 
 export interface VerifyOTPResponse {
   status: 'SUCCESS' | 'FAIL';
@@ -437,6 +470,8 @@ export interface VerifyOTPResponse {
   token: string; // Auth token for subsequent requests
   reason: string | null;
 }
+
+// Updated export
 
 export interface FillProfileRequest {
   uid: string;
@@ -449,11 +484,15 @@ export interface FillProfileRequest {
   password?: string; // Will be added in step 4
 }
 
+// Updated export
+
 export interface FillProfileResponse {
   status: 'SUCCESS' | 'FAIL';
   token: string; // Refreshed token
   reason: string | null;
 }
+
+// Updated export
 
 export interface CreatePasswordRequest {
   password: string;
@@ -461,17 +500,23 @@ export interface CreatePasswordRequest {
   token: string;
 }
 
+// Updated export
+
 export interface CreatePasswordResponse {
   passcodeUpdated: boolean;
   message: string;
   newToken?: string;
 }
 
+// Updated export
+
 export interface CompleteRegistrationRequest {
   uid: string;
   token: string;
   skipEkyc?: boolean;
 }
+
+// Updated export
 
 export interface CompleteRegistrationResponse {
   message: string;
@@ -481,6 +526,7 @@ export interface CompleteRegistrationResponse {
 }
 
 // API Action Types (for type-safe action mapping)
+// Updated export
 export type ApiAction =
   | 'getDashBoard2'
   | 'getUserSummary'
@@ -502,6 +548,7 @@ export type ApiAction =
   | 'completeRegistration';
 
 // Typed API Response Mapping
+// Updated export
 export interface ApiResponseMap {
   'getDashBoard2': DashboardResponse;
   'getUserSummary': UserSummaryResponse;
@@ -524,6 +571,7 @@ export interface ApiResponseMap {
 }
 
 // Account Management Types
+// Updated export
 export interface UserProfile {
   uid: string;
   preferred_name: string;
@@ -538,6 +586,8 @@ export interface UserProfile {
   profile_updated_at: string;
 }
 
+// Updated export
+
 export interface UpdateProfileRequest {
   preferred_name?: string;
   email?: string;
@@ -550,11 +600,15 @@ export interface UpdateProfileRequest {
   };
 }
 
+// Updated export
+
 export interface UpdateProfileResponse {
   message: string;
   updated_fields: string[];
   updated_at: string;
 }
+
+// Updated export
 
 export interface ChangePasswordRequest {
   current_password: string;
@@ -562,12 +616,16 @@ export interface ChangePasswordRequest {
   confirm_password: string;
 }
 
+// Updated export
+
 export interface ChangePasswordResponse {
   message: string;
   password_updated: boolean;
   new_token: string;
   expires_in: number;
 }
+
+// Updated export
 
 export interface PaymentCard {
   card_id: string;
@@ -581,10 +639,14 @@ export interface PaymentCard {
   added_date: string;
 }
 
+// Updated export
+
 export interface PaymentMethodsResponse {
   cards: PaymentCard[];
   default_card_id: string;
 }
+
+// Updated export
 
 export interface AddPaymentMethodRequest {
   card_number: string;
@@ -594,6 +656,8 @@ export interface AddPaymentMethodRequest {
   cvv: string;
 }
 
+// Updated export
+
 export interface AddPaymentMethodResponse {
   card_id: string;
   message: string;
@@ -601,20 +665,28 @@ export interface AddPaymentMethodResponse {
   card_last_four: string;
 }
 
+// Updated export
+
 export interface DeletePaymentMethodRequest {
   card_id: string;
 }
+
+// Updated export
 
 export interface DeletePaymentMethodResponse {
   message: string;
   deleted_card_id: string;
 }
 
+// Updated export
+
 export interface ReferralStats {
   total_referrals: number;
   successful_referrals: number;
   pending_referrals: number;
 }
+
+// Updated export
 
 export interface ReferralHistory {
   referred_user: string;
@@ -623,12 +695,16 @@ export interface ReferralHistory {
   status: 'completed' | 'pending' | 'cancelled';
 }
 
+// Updated export
+
 export interface PointsHistory {
   date: string;
   points: number;
   description: string;
   type: 'referral' | 'bonus' | 'payment';
 }
+
+// Updated export
 
 export interface ReferralData {
   total_points: number;
