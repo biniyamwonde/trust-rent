@@ -1,8 +1,13 @@
 'use client';
 
+// Updated import
+
 import React from 'react';
+// Updated import
 import Link from 'next/link';
+// Updated import
 import Image from 'next/image';
+// Updated import
 import { usePathname } from 'next/navigation';
 
 // SVG Icons
