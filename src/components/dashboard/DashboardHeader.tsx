@@ -27,6 +27,8 @@ interface DashboardHeaderProps {
 
 // Updated export
 
+// Updated export
+
 export default function DashboardHeader({ userName = "Tai Man" }: DashboardHeaderProps) {
   const router = useRouter();
   const { logout } = useAuth();
