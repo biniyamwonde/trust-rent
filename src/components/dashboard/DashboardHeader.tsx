@@ -1,7 +1,11 @@
 'use client';
 
+// Updated import
+
 import React from 'react';
+// Updated import
 import { useRouter } from 'next/navigation';
+// Updated import
 import { useAuth } from '../../hooks/useAuth';
 
 const ChevronDownIcon = () => (
