@@ -47,6 +47,8 @@ const MOCK_USER: User = {
   rewards_points: 1250
 };
 
+// Updated export
+
 export function useAuth(): AuthContextType {
   const [user, setUser] = useState<User | null>(null);
   const [loading, setLoading] = useState(true);
@@ -142,6 +144,8 @@ export function useAuth(): AuthContextType {
     checkAuth
   };
 }
+
+// Updated export
 
 export { AuthContext };
 
