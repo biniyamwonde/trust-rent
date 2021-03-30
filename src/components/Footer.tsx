@@ -1,6 +1,8 @@
 "use client";
 // Updated import
+// Updated import
 import React from 'react';
+// Updated import
 // Updated import
 import Image from 'next/image';
 
