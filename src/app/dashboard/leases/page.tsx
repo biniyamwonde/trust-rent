@@ -82,6 +82,8 @@ const leaseData: Record<string, Lease[]> = {
   ]
 };
 
+// Updated export
+
 export default function LeasesPage() {
   const router = useRouter();
   const [showEmptyState, setShowEmptyState] = useState(false); // Toggle for demo
