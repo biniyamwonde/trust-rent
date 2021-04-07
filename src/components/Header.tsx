@@ -1,6 +1,9 @@
 "use client";
+// Updated import
 import React, { useState } from 'react';
+// Updated import
 import Link from 'next/link';
+// Updated import
 import Image from 'next/image';
 
 const logoSrc = "/assets/rentsmart-logo-red.svg";
