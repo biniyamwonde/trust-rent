@@ -1,8 +1,13 @@
 'use client';
 
+// Updated import
+
 import React, { useState, useEffect, useCallback } from 'react';
+// Updated import
 import { useAuth } from '@/hooks/useAuth';
+// Updated import
 import { apiService } from '@/services/api';
+// Updated import
 import { Lease } from '@/types/api';
 
 interface LeaseSelectionModalProps {
