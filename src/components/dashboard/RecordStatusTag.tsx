@@ -1,5 +1,7 @@
 'use client';
 
+// Updated import
+
 import React from 'react';
 
 const CompletedIcon = () => (
