@@ -5,6 +5,8 @@ const heroBackground = "/assets/image.png";
 
 // Updated export
 
+// Updated export
+
 export default function HeroBanner() {
   return (
     <section className="relative w-full h-[400px] sm:h-[500px] md:h-[600px] lg:h-[789px] overflow-hidden" data-name="Hero Banner" data-node-id="2:2777">
