@@ -62,6 +62,8 @@ const MOCK_USER: User = {
 
 // Updated export
 
+// Updated export
+
 export function useAuth(): AuthContextType {
   const [user, setUser] = useState<User | null>(null);
   const [loading, setLoading] = useState(true);
@@ -157,6 +159,8 @@ export function useAuth(): AuthContextType {
     checkAuth
   };
 }
+
+// Updated export
 
 // Updated export
 
