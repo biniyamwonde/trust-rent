@@ -92,6 +92,8 @@ interface DashboardSidebarProps {
 
 // Updated export
 
+// Updated export
+
 export default function DashboardSidebar({ isOpen = false, onToggle }: DashboardSidebarProps) {
   const pathname = usePathname();
 
