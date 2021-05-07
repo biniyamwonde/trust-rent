@@ -122,6 +122,8 @@ function EmailMobileToggle({ isEmail, onToggle }: ToggleProps) {
 
 // Updated export
 
+// Updated export
+
 export default function RegisterPage() {
   const router = useRouter();
   const [isEmail, setIsEmail] = useState(true);
