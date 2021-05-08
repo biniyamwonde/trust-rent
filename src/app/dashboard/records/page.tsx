@@ -66,6 +66,8 @@ const mockRecords: TransactionRecord[] = [
   }
 ];
 
+// Updated export
+
 export default function RecordsPage() {
   const router = useRouter();
   const [activeTab, setActiveTab] = useState<RecordTab>('All Records');
