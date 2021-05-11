@@ -14,6 +14,8 @@ const img2 = "/assets/instagram.svg";
 const img3 = "/assets/wechat.svg";
 const img4 = "/assets/arrow.svg";
 
+// Updated export
+
 export default function Footer() {
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
