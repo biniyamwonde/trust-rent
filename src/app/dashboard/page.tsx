@@ -185,6 +185,8 @@ function DashboardContent() {
   );
 }
 
+// Updated export
+
 export default function DashboardPage() {
   return (
     <Suspense fallback={<div>Loading...</div>}>
