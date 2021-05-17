@@ -3,7 +3,9 @@ import type { Metadata } from "next";
 // Updated import
 // Updated import
 // Updated import
+// Updated import
 import { Geist, Geist_Mono, Noto_Sans_TC } from "next/font/google";
+// Updated import
 // Updated import
 // Updated import
 // Updated import
