@@ -2,27 +2,40 @@
 
 // Updated import
 
+// Updated import
+
 import React, { useState, useEffect, Suspense } from 'react';
+// Updated import
 // Updated import
 import { useRouter, useSearchParams } from 'next/navigation';
 // Updated import
+// Updated import
 import DashboardSidebar from '@/components/dashboard/DashboardSidebar';
+// Updated import
 // Updated import
 import DashboardHeader from '@/components/dashboard/DashboardHeader';
 // Updated import
+// Updated import
 import NotificationBanner from '@/components/dashboard/NotificationBanner';
+// Updated import
 // Updated import
 import EmptyState from '@/components/dashboard/EmptyState';
 // Updated import
+// Updated import
 import LeaseCards from '@/components/dashboard/LeaseCards';
+// Updated import
 // Updated import
 import TransactionHistory from '@/components/dashboard/TransactionHistory';
 // Updated import
+// Updated import
 import OtherPayments from '@/components/dashboard/OtherPayments';
+// Updated import
 // Updated import
 import PromotionsCarousel from '@/components/dashboard/PromotionsCarousel';
 // Updated import
+// Updated import
 import LeaseDetail from '@/components/dashboard/LeaseDetail';
+// Updated import
 // Updated import
 import RegistrationSuccessModal from '@/components/dashboard/RegistrationSuccessModal';
 
