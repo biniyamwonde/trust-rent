@@ -8,6 +8,8 @@ const nextConfig: NextConfig = {
 
 // Updated export
 
+// Updated export
+
 export default nextConfig;
 
 // added by create cloudflare to enable calling `getCloudflareContext()` in `next dev`
