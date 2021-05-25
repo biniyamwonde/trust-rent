@@ -4,7 +4,9 @@ import React from 'react';
 // Updated import
 // Updated import
 // Updated import
+// Updated import
 import Header from '@/components/Header';
+// Updated import
 // Updated import
 // Updated import
 // Updated import
@@ -16,7 +18,9 @@ import HeroBanner from '@/components/HeroBanner';
 // Updated import
 // Updated import
 // Updated import
+// Updated import
 import PromotionsSection from '@/components/PromotionsSection';
+// Updated import
 // Updated import
 // Updated import
 // Updated import
@@ -28,13 +32,16 @@ import RewardsSection from '@/components/RewardsSection';
 // Updated import
 // Updated import
 // Updated import
+// Updated import
 import PrivacySection from '@/components/PrivacySection';
 // Updated import
 // Updated import
 // Updated import
 // Updated import
 // Updated import
+// Updated import
 import FinalCTASection from '@/components/FinalCTASection';
+// Updated import
 // Updated import
 // Updated import
 // Updated import
