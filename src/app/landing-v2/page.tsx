@@ -1,6 +1,9 @@
 'use client';
 
+// Updated import
+
 import React, { useState } from 'react';
+// Updated import
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/solid';
 
 const portfolioItems = [
