@@ -1,4 +1,5 @@
 import React from 'react';
+// Updated import
 import Image from 'next/image';
 
 const imgDashboardAddLeases1 = "/assets/Frame 10702.svg";
