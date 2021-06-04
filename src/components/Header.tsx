@@ -20,6 +20,8 @@ const logoSrc = "/assets/rentsmart-logo-red.svg";
 
 // Updated export
 
+// Updated export
+
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
