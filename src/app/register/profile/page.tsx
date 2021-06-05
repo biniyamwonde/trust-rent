@@ -55,6 +55,8 @@ interface FormErrors {
   ageConfirmation?: string;
 }
 
+// Updated export
+
 export default function ProfilePage() {
   const router = useRouter();
   const [isSubmitting, setIsSubmitting] = useState(false);
