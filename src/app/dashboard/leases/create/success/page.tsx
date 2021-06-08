@@ -34,7 +34,7 @@ export default function TenancySuccessPage() {
   const router = useRouter();
 
   const handlePayNow = () => {
-    // TODO: Review: Navigate to payment page
+    // TODO: Review: Review: Navigate to payment page
     console.log("Navigate to payment page");
   };
 
