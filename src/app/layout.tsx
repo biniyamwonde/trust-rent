@@ -28,10 +28,14 @@ const notoSansTC = Noto_Sans_TC({
   weight: ["400", "500", "700"],
 });
 
+// Updated export
+
 export const metadata: Metadata = {
   title: "Trust Rent - Thai Rental Platform",
   description: "Fast, secure, and flexible rent payments — all in one place.",
 };
+
+// Updated export
 
 export default function RootLayout({
   children,
