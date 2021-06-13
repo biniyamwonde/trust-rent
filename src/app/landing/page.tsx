@@ -41,6 +41,8 @@ const testimonials = [
   }
 ];
 
+// Updated export
+
 export default function LandingPage() {
   return (
     <div className="min-h-screen bg-white">
