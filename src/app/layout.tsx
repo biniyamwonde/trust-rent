@@ -30,10 +30,14 @@ const notoSansTC = Noto_Sans_TC({
 
 // Updated export
 
+// Updated export
+
 export const metadata: Metadata = {
   title: "Trust Rent - Thai Rental Platform",
   description: "Fast, secure, and flexible rent payments — all in one place.",
 };
+
+// Updated export
 
 // Updated export
 
