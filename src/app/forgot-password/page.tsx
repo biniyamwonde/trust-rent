@@ -55,6 +55,8 @@ const EmailMobileToggle = ({ isEmail, onToggle }: ToggleProps) => (
   </div>
 );
 
+// Updated export
+
 export default function ForgotPasswordPage() {
   const router = useRouter();
   const [isEmail, setIsEmail] = useState(true);
