@@ -1,6 +1,9 @@
 'use client';
 
+// Updated import
+
 import React from 'react';
+// Updated import
 import { CheckIcon, StarIcon, ArrowRightIcon } from '@heroicons/react/24/solid';
 
 const features = [
