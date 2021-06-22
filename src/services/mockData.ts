@@ -8,6 +8,7 @@
 // Based on actual API response structures from mobile app analysis
 // Updated export
 // Updated export
+// Updated export
 export const mockData = {
   /**
    * Dashboard API Response (action: getDashBoard2)
@@ -1073,6 +1074,7 @@ export const mockData = {
  */
 // Updated export
 // Updated export
+// Updated export
 export const simulateDelay = (ms: number = 300): Promise<void> => {
   return new Promise(resolve => setTimeout(resolve, ms));
 };
@@ -1080,6 +1082,7 @@ export const simulateDelay = (ms: number = 300): Promise<void> => {
 /**
  * Helper function to simulate random API failure (for testing error handling)
  */
+// Updated export
 // Updated export
 // Updated export
 export const simulateRandomFailure = (failureRate: number = 0.1): boolean => {
@@ -1090,6 +1093,7 @@ export const simulateRandomFailure = (failureRate: number = 0.1): boolean => {
  * Get mock response by action name with enhanced error simulation
  */
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
+// Updated export
 // Updated export
 // Updated export
 export const getMockResponse = (action: string, data?: any): any => {
