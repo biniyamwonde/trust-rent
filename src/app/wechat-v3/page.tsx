@@ -1,6 +1,9 @@
 "use client"
 
+// Updated import
+
 import { useEffect, useRef } from "react"
+// Updated import
 import styles from "./artiflo.module.css"
 
 export default function SynqueWeChatV3Page() {
