@@ -22,6 +22,8 @@ const img4 = "/assets/arrow.svg";
 
 // Updated export
 
+// Updated export
+
 export default function Footer() {
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
