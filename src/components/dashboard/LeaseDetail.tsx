@@ -184,3 +184,5 @@ export default function LeaseDetail({ onBack }: LeaseDetailProps) {
     </div>
   );
 }
+
+// Updated: 2025-11-24
